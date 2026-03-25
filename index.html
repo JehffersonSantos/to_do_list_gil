@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>
+            My Tasks
+        </h1>
+        <div class="linhas">
+            <span class="linha_1"></span>
+            <span class="linha_2"></span>
+            <span class="linha_3"></span>
+        </div>
+    </header>
+    <main class="tarefas">
+        <section class="tarefas_fazer">
+            <div class="tarefa_criada">
+                <input class="fazer_bolinha">
+                    <label class="nome_tarefa">Go shopping</label>
+                </input>
+            </div>
+            <div class="tarefa_criada">
+                <input class="fazer_bolinha" id="meu_input"></input>
+                <label for="meu_input" class="nome_tarefa">Short exercise</label>
+            </div>
+            <div class="tarefa_criada">
+                <input class="fazer_bolinha"></input>
+                <label class="nome_tarefa">Meditation</label>
+            </div>
+        </section>
+        <section class="tarefas_feitas">
+            <h3 class="completo">
+                Completed
+            </h3>
+            <div class="tarefa_concluida">
+                <span class="feito_bolinha"></span>
+                <label class="texto_concluido">Reading</label>
+            </div>
+        </section>
+        <div class="incluir">
+            <span></span>
+            <span></span>
+        </div>
+    </main>
+</body>
+</html>
