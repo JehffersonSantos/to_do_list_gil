@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="cabecalho">
-        <h1>
+        <h1 class="task">
             My Tasks
         </h1>
         <div class="linhas">
@@ -24,31 +24,40 @@
     <main class="tarefas">
         <section class="tarefas_fazer">
             <div class="tarefa_criada">
-                <input class="fazer_bolinha">
+                <input type="checkbox" class="fazer_bolinha bolinha_marcada">
                     <label class="nome_tarefa">Go shopping</label>
-                </input>
             </div>
             <div class="tarefa_criada">
-                <input class="fazer_bolinha" id="meu_input"></input>
-                <label for="meu_input" class="nome_tarefa">Short exercise</label>
+                <input type="checkbox" class="fazer_bolinha">
+                    <label class="nome_tarefa">Short exercise</label>
             </div>
             <div class="tarefa_criada">
-                <input class="fazer_bolinha"></input>
-                <label class="nome_tarefa">Meditation</label>
+                <input type="checkbox" class="fazer_bolinha">
+                    <label class="nome_tarefa">Meditation</label>
             </div>
         </section>
         <section class="tarefas_feitas">
             <h3 class="completo">
                 Completed
             </h3>
-            <div class="tarefa_concluida">
-                <span class="feito_bolinha"></span>
-                <label class="texto_concluido">Reading</label>
+            <div class="tarefas_concluidas">
+                <div class="tarefa_concluida">
+                    <input type="checkbox" class="fazer_bolinha bolinha_marcada">
+                        <label class="nome_tarefa">Reading</label>
+                    </div>
+                <div class="tarefa_concluida">
+                    <input type="checkbox" class="fazer_bolinha bolinha_marcada">
+                        <label class="nome_tarefa">Reading</label>
+                    </div>
+                <div class="tarefa_concluida">
+                    <input type="checkbox" class="fazer_bolinha bolinha_marcada">
+                        <label class="nome_tarefa">Reading</label>
+                    </div>
             </div>
         </section>
         <div class="incluir">
-            <span></span>
-            <span></span>
+            <span class="linha_vertical"></span>
+            <span class="linha_horizontal"></span>
         </div>
     </main>
 </body>
