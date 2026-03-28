@@ -28,6 +28,10 @@ body {
     margin: 2rem 0 2rem 0;
 }
 
+.criar_tarefa {
+    display: none;
+}
+
 h1 {
     color: var(--cor-font);
     font-size: 36px;
@@ -114,6 +118,11 @@ h1 {
 
 }
 
+
+.nome_tarefa {
+    padding: 8px;
+}
+
 .tarefa_criada, .fazer_bolinha, .nome_tarefa:hover {
     cursor: pointer;
 }
@@ -147,6 +156,7 @@ h1 {
 
 .tarefa_concluida {
     display: flex;
+    align-items: center;
     gap: 1rem;
     box-shadow: 
         inset -4px -4px 2px rgb(71, 71, 71, 0.3),
@@ -159,6 +169,10 @@ h1 {
         
 /* Botão de mais */
 
+.criar_task {
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 .incluir {
     display: flex;
@@ -173,6 +187,12 @@ h1 {
         2px 2px 2px rgba(2, 2, 2, 0.4);
     margin-left: auto;
     
+}
+
+.incluir {
+    text-decoration: none;
+    appearance: none;
+    border: none;
 }
 
 .linha_vertical {
@@ -194,17 +214,97 @@ h1 {
 
 .incluir:hover {
     cursor: pointer;
+
 }
+
+.criar_tarefa_botão {
+
+    background: var(--cor-Fundo);
+    color: var(--cor-font);
+    border: none;
+    border-radius: 12px;
+    box-shadow:
+    inset -2px -2px 2px rgba(172, 172, 172, 0.4),
+    inset 2px 2px 2px rgba(2, 2, 2, 0.4);
+    padding: 0.5rem 2.5rem;
+    width: 250px;
+    height: 50px;
+    appearance: none;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.desativado {
+    display: none;
+}
+
 
 
 
 /* ////////////////////////////////// Versão Desktop ////////////////////////////////// */
 
-@media (width > 600px) {
+@media (width > 640px) {
 
   .task {
     display: none;
   }
+
+  .criar_tarefa {
+    display: unset;
+    background: var(--cor-Fundo);
+    color: var(--cor-font);
+    border: none;
+    border-radius: 12px;
+    box-shadow:
+    inset -2px -2px 2px rgba(172, 172, 172, 0.4),
+    inset 2px 2px 2px rgba(2, 2, 2, 0.4);
+    padding: 0.5rem 2.5rem;
+    width: 540px;
+    height: 50px;
+    appearance: none;
+    text-decoration: none;
+    margin-right: 15rem;
+    margin-left: 10rem;
+  }
+  .cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .tarefas_fazer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 5rem;
+    margin: 0 5rem 5rem 5rem;
+  }
+
+  .linhas {
+    position: relative;
+
+  }
+
+  .tarefas_concluidas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 5rem;
+
+  }
+  
+
+  .tarefas_feitas {
+    margin: 0 5rem;
+  }
+
+  .incluir {
+    display: none;
+  }
+
+  .criar_tarefa_botão {
+    display: none;
+  }
+
 }
 
 
