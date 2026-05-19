@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <form class="incluir_desktop">
+            <input 
+                type="text" 
+                class="criar_tarefa" 
+                placeholder="Add new task"
+            >
+            <button class="botao_seta_desktop">
+                <img src="images/Vector (1).png" alt="seta" class="image_seta_desktop">
+            </button>
+            <!-- <div class="seta">
+                <span class="linha_cima"></span>
+                <span class="linha_embaixo"></span>
+            </div> -->
+        </form>
+        <h1 class="task">
+            My Tasks
+        </h1>
+        <div class="linhas">
+            <span class="linha_1"></span>
+            <span class="linha_2"></span>
+            <span class="linha_3"></span>
+        </div>
+    </header>
+    <main class="tarefas">
+        <section class="tarefas_fazer" id="fazer_tarefas">
+            <!-- <div class="tarefa_criada">
+                <input type="checkbox" class="tarefa_bolinha_fazer">
+                    <label class="nome_tarefa">ir a escola</label>
+            </div>
+            <div class="tarefa_criada">
+                <input type="checkbox" class="tarefa_bolinha_fazer">
+                    <label class="nome_tarefa">ir ao shoping</label>
+            </div>
+            <div class="tarefa_criada">
+                <input type="checkbox" class="tarefa_bolinha_fazer">
+                    <label class="nome_tarefa">estudar</label>
+            </div> -->
+        </section>
+        <section class="tarefas_feitas">
+            <h3 class="completo">
+                Completed
+            </h3>
+            <div class="tarefas_concluidas">
+                <!-- <div class="tarefa_concluida">
+                    <input type="checkbox" class="tarefa_bolinha_feita" checked>
+                        <label class="nome_tarefa">estudar</label>
+                </div>                 -->
+            </div>
+        </section>
+        <div class="criar_task">
+            <button class="incluir">
+                <span class="linha_vertical"></span>
+                <span class="linha_horizontal"></span>
+            </button>
+            <input type="text" class="criar_tarefa_botão desativado" placeholder="Add new task" value>
+        </div>
+    </main>
+    <script src="meuscript5.js" defer></script>
+</body>
+</html>
