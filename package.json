@@ -16,12 +16,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "node ./node_modules/vite/bin/vite.js build"
+
   },
   "dependencies": {
     "vite": "^8.0.14"
-  },
-  "devDependencies": {
-    "parcel": "^2.16.4"
-  }
+  }, "devDependencies": {
+    "sass": "^1.52.2"
+  } 
+
+  
 }

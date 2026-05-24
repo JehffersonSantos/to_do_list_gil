@@ -148,7 +148,7 @@ function incluirTarefa (tarefa) {
     minhasTarefas.forEach((minhasTarefas) =>  {
         console.log(minhasTarefas.descricaoTarefa)
         if(tarefa.descricaoTarefa === minhasTarefas.descricaoTarefa) {
-            return tarefa.descricaoTarefa + "1"
+            return tarefa.descricaoTarefa + 1
         };
     });
     
