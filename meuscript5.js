@@ -1,11 +1,12 @@
 const tarefas_fazer = document.querySelector(".tarefas_fazer");
 const tarefas_feitas = document.querySelector(".tarefas_feitas")
 const tarefas_concluidas = document.querySelector(".tarefas_concluidas");
-const input_mobile = document.querySelector(".criar_tarefa_botão");
+const input_mobile = document.querySelector(".criar_tarefa_mobile");
 const botao_mobile = document.querySelector(".incluir");
 const tarefa_Desktop = document.querySelector(".criar_tarefa");
 const botao_Desktop = document.querySelector(".botao_seta_desktop");
 const incluir_desktop = document.querySelector(".incluir_desktop");
+const criar_task_mobile = document.querySelector(".criar_task")
 
 
 const minhasTarefas = [
@@ -134,9 +135,23 @@ function exibirTarefa () {
 
 function incluirTarefa (tarefa) {
 
+    const tarefaSemEspaco = tarefa.descricaoTarefa.trim()
+    console.log("Tarefa sem espaço:",tarefaSemEspaco)
+    console.log("tarefa sem espaço length", tarefaSemEspaco.length)
+
     if (tarefa.descricaoTarefa.length === 0 || tarefa.descricaoTarefa === ' ') {
+        console.log(tarefa.descricaoTarefa)
         return 
     }
+
+    console.log("tarefa descrição:", tarefa.descricaoTarefa)
+    minhasTarefas.forEach((minhasTarefas) =>  {
+        console.log(minhasTarefas.descricaoTarefa)
+        if(tarefa.descricaoTarefa === minhasTarefas.descricaoTarefa) {
+            return tarefa.descricaoTarefa + "1"
+        };
+    });
+    
     minhasTarefas.push(tarefa);
 }
 
@@ -156,7 +171,7 @@ incluir_desktop.addEventListener("submit", (event) => {
 
     criarTarefa(tarefa_Criada, "tarefa_criada", "tarefa_bolinha_fazer", true);
 
-    console.log(minhasTarefas)
+    // console.log(minhasTarefas)
 
     tarefa_Desktop.value = "";
 
@@ -171,9 +186,25 @@ incluir_desktop.addEventListener("submit", (event) => {
 
 
 
-botao_mobile.addEventListener("click", () => {
-    input_mobile.classList.toggle("desativado")
-    criarTarefa(tarefas_fazer, "tare_")
+criar_task_mobile.addEventListener("submit", (e) => {
+    e.preventDefault(e);
+    input_mobile.classList.toggle("desativado");
+    console.log("Clicado");
+
+    console.log(input_mobile.value);
+
+    const tarefa_Criada_Valor = input_mobile.value
+    const tarefa_Criada = {
+        descricaoTarefa:tarefa_Criada_Valor,
+        status:'fazer'
+    };
+
+    incluirTarefa(tarefa_Criada);
+
+    criarTarefa(tarefa_Criada, "tarefa_criada", "tarefa_bolinha_fazer", true);
+
+    input_mobile.focus()
+    input_mobile.value = "";
 });
 
 
