@@ -2,6 +2,14 @@
   "name": "to_do_list",
   "version": "1.0.0",
   "description": "criando_To_do_list",
+  "homepage": "https://github.com/JehffersonSantos/to_do_list_gil#readme",
+  "bugs": {
+    "url": "https://github.com/JehffersonSantos/to_do_list_gil/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JehffersonSantos/to_do_list_gil.git"
+  },
   "license": "ISC",
   "author": "Jefferson",
   "type": "commonjs",
@@ -10,5 +18,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build"
+  },
+  "dependencies": {
+    "vite": "^8.0.14"
   }
 }
