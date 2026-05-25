@@ -1,4 +1,4 @@
-<img width="798" height="458" alt="image" src="https://github.com/user-attachments/assets/6059bc13-65fb-47ae-9885-bdeffec8c011" />  # Criação de uma To do List
+# Criação de uma To do List
 
    Projeto pessoal de uma To Do List, para que eu possa criar tarefas, colocar como feitas ou em fazer e posso alterar o status delas dinamicamente.
 
@@ -16,15 +16,15 @@ Tem o repositorio no GitHub atraves do link [Projeto To do List](https://github.
 
 É bem simples: no topo da tela tem a opção de adicionar tarefa, onde você pode colocar o que pretende anotar como tarefa, como no exemplo abaixo.
 
-![Colocando tarefa](https://github.com/user-attachments/assets/3d97e66a-4fab-470f-838d-7c6adb58dd7a)
+![Colocando tarefa](https://github.com/user-attachments/assets/4167d024-535a-4765-a5c1-fe92443dc3b9)
 
 Após adicionar a tarefa, ela será incluída como tarefa a fazer, como no exemplo abaixo.
 
-![Tarefa incluída](https://github.com/user-attachments/assets/4f138a84-93b6-418e-97f3-5e573573675d)
+![Tarefa incluída](https://github.com/user-attachments/assets/bec7f8a9-436d-420e-887c-9799bfc60c05)
 
 Ao finalizarmos a tarefa, é só clicar nela que ela vai para a seção de tarefas completadas.
 
-![Alterando status da tarefa](https://github.com/user-attachments/assets/486f3262-b1c0-40bb-beb4-ce9d210749bf)
+![Alterando status da tarefa](https://github.com/user-attachments/assets/67c2ffe3-9f95-4bb5-aeab-71cf575e3556)
 
 
  ## Como foi criado
