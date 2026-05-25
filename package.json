@@ -18,13 +18,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "node ./node_modules/vite/bin/vite.js build"
-
   },
-  "dependencies": {
+  "devDependencies": {
+    "sass": "^1.52.2",
     "vite": "^8.0.14"
-  }, "devDependencies": {
-    "sass": "^1.52.2"
-  } 
-
-  
+  }
 }
