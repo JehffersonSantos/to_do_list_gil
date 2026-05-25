@@ -32,27 +32,27 @@ Ao finalizarmos a tarefa, é só clicar nela que ela vai para a seção de taref
  ### HTML
 
 No HTML foi feito dois blocos diferentes onde um tem as tarefas a fazer e outro com as tarefas feitas 
-![Como o HTML foi criado](https://github.com/user-attachments/assets/0d42eddf-eee9-4636-84f2-e5fcfa9b7aff)
+![Como o HTML foi criado](https://github.com/user-attachments/assets/8b0f67d8-f2c4-4f0f-af1f-22425ebc8fc6)
 onde eu fiz pequenos exemplos de como ficaria o codigo após a tarefa ser incluida como concluida ou a fazer.
 
 
 ### JS
 
 No JavaScript primeiro eu comecei selecionando os elementosdo DOM e criando um pequeno banco de dados como consta na imagem abaixo 
-![imagem](https://github.com/user-attachments/assets/a8701448-2a4c-41b3-92e9-cf177d00d6ca)
+![imagem](https://github.com/user-attachments/assets/3245e036-11e5-48ba-a289-31703ca1985a)
 
 Resolvi colocar a lista de tarefas em uma unica lista de objetos, porque a unica informação que iria alterar dinamicamente era o status, de "feito" para "fazer" e vice-versa.
 
 Inicialmente criei a função "criarTarefa" onde a mesma irá ser responsavel por criar a "div" onde vai a informações da tarefa e o status da tarefa ou seja vai criar o "input" e a "label", vai ser responsavel por preencher com as informações da tarefa e incluir a classe, após preencher os dados vai colocar a função de "click" na tarefa para ser feito a troca de status de "feito" para "fazer", e uma validação para quando for criar a tarefa assim criando uma unica tarefa, e por ultimo retornando todas as informações criada e controladas
 
 A proxima função é a "exibirTarefa", onde a função dela é fazer aparecer na tela do usuario as tarefas criadas, ela vai receber as informações das tarefas e crialas de acordo com o status da tarefa 
-![funcao exibirTarefa](https://github.com/user-attachments/assets/84ef8b6d-6366-45b6-a804-dafa77c79e49)
+![funcao exibirTarefa](https://github.com/user-attachments/assets/915eeb92-3bbe-483d-84e9-565e4395fefe)
 
-Temos a função incluirTarefa, basicamente ela serve para incluir a tarefa e faz a validação se tarefa esta vazia ou não ![incluirTarefa](https://github.com/user-attachments/assets/3e5354b7-820f-4a82-bebb-dd5b34f14995).
+Temos a função incluirTarefa, basicamente ela serve para incluir a tarefa e faz a validação se tarefa esta vazia ou não ![incluirTarefa](https://github.com/user-attachments/assets/5cbe7aa5-729e-4c46-b638-29fd678bf558).
 
 E por ultimo temos a função incluirTarefa onde foi colocando como um submit para ter a praticidade e agir como um botão, ela inicialmente vem pré moldada para sempre ter o status:'fazer' e o valor que foi digitado pelo usuario, vai utilizar a função incluirTarefa para colocar na lista de tarefa e vai utilizar a função criarTarefa para mostrar a nova tarefa para o usuario e por fim limpar o campo que foi digitado.
 
-![botão](https://github.com/user-attachments/assets/64a0180c-0a73-4839-b9db-da3c73f0f974)
+![botão](https://github.com/user-attachments/assets/e92059b2-7804-4b49-84f0-3b11cd8b5ce8)
 
 
 
